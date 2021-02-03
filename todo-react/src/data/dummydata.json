@@ -1,0 +1,189 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "created": "1987-01-01 15:00:01",
+      "title": "Frontend ulkoasu",
+      "minutes": 0,
+      "due": "2020-12-27",
+      "isCompleted": false,
+      "isArchived": false,
+      "subtasks": [
+        {
+          "title": "CSS määritykset",
+          "minutes": 60,
+          "isCompleted": false
+        },
+        {
+          "title": "HTML blokit",
+          "minutes": 60,
+          "isCompleted": true
+        },
+        {
+          "title": "Javascript skriptit",
+          "minutes": 60,
+          "isCompleted": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "created": "1995-05-04 19:35:12",
+      "title": "Backendin rakennus",
+      "minutes": 0,
+      "due": "2020-12-28",
+      "isCompleted": false,
+      "isArchived": false,
+      "subtasks": [
+        {
+          "title": "Tulkkaus frontendin pyynnöistä",
+          "minutes": 90,
+          "isCompleted": false
+        },
+        {
+          "title": "Parsetaan pyyntö sopivaksi tietokantaa varten",
+          "minutes": 120,
+          "isCompleted": false
+        },
+        {
+          "title": "Lähetetään kysely tietokannalle",
+          "minutes": 45,
+          "isCompleted": false
+        },
+        {
+          "title": "Vastaanotetaan tietokannan vastaus",
+          "minutes": 75,
+          "isCompleted": false
+        },
+        {
+          "title": "Tulkitaan tietokannan vastaus ja pakataan json",
+          "minutes": 30,
+          "isCompleted": false
+        },
+        {
+          "title": "Lähetetään json frontendille",
+          "minutes": 15,
+          "isCompleted": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "created": "2001-12-29 11:42:02",
+      "title": "Tietokannan rakennus",
+      "minutes": 0,
+      "due": "2020-12-29",
+      "isCompleted": false,
+      "isArchived": false,
+      "subtasks": [
+        {
+          "title": "Tietokannan luontilauseet",
+          "minutes": 30,
+          "isCompleted": true
+        },
+        {
+          "title": "Tietokannan uml kaavio",
+          "minutes": 120,
+          "isCompleted": false
+        },
+        {
+          "title": "SQL settings setup",
+          "minutes": 45,
+          "isCompleted": false
+        },
+        {
+          "title": "Maksa serveritila tietokannalle",
+          "minutes": 5,
+          "isCompleted": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "created": "2016-06-18 18:20:57",
+      "title": "Markkinointiasiat",
+      "minutes": 120,
+      "due": "2020-12-30",
+      "isCompleted": true,
+      "isArchived": true,
+      "subtasks": []
+    },
+    {
+      "id": 5,
+      "created": "2020-04-01 00:00:01",
+      "title": "Aprillipäivän 2021 julkaisuversio valmiina",
+      "minutes": 0,
+      "due": "2021-03-30",
+      "isCompleted": false,
+      "isisisArchived": false,
+      "subtasks": [
+        {
+          "title": "Varmista julkaisija",
+          "minutes": 30,
+          "isCompleted": false
+        },
+        {
+          "title": "Varaa lehtimainokset",
+          "minutes": 120,
+          "isCompleted": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "created": "2020-04-20 16:20:00",
+      "title": "Firman pikkujoulut",
+      "minutes": 420,
+      "due": "2020-12-24",
+      "isCompleted": false,
+      "isArchived": false,
+      "subtasks": []
+    },
+    {
+      "id": 7,
+      "created": "2020-11-20 12:00:00",
+      "title": "Tee kurssitehtävät loppuun",
+      "minutes": 0,
+      "due": "2020-12-31",
+      "isCompleted": false,
+      "isArchived": false,
+      "subtasks": [
+        {
+          "title": "Web kurssi",
+          "minutes": 90,
+          "isCompleted": true
+        },
+        {
+          "title": "Python kurssi",
+          "minutes": 120,
+          "isCompleted": true
+        },
+        {
+          "title": "Java perusteet",
+          "minutes": 45,
+          "isCompleted": true
+        },
+        {
+          "title": "Java pro master kurssi",
+          "minutes": 60,
+          "isCompleted": true
+        },
+        {
+          "title": "ECMAScript perusteet",
+          "minutes": 720,
+          "isCompleted": true
+        },
+        {
+          "title": "Angular versus React projektikurssi",
+          "minutes": 90,
+          "isCompleted": false
+        },
+        {
+          "title": "Edistynyt CSS",
+          "minutes": 15,
+          "isCompleted": false
+        }
+      ]
+    }
+  ]
+}

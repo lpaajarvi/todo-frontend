@@ -1,0 +1,268 @@
+/*
+-----------------------------
+MAIN CSS ELEMENTS AND CLASSES:
+-----------------------------
+*/
+
+* {
+  font-family: 'Roboto', Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  background: antiquewhite fixed;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.todo-list {
+  background: rgb(217, 245, 217);
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 100px;
+  width: 100%;
+  max-width: 700px;
+}
+
+.archived-list {
+  background: rgba(110, 116, 27, 0.664);
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 100px;
+  width: 100%;
+  max-width: 700px;
+  filter: brightness(0.9) saturate(0.9);
+}
+
+/*
+This !important workaround is not needed in local version, but for some reaason when uploaded the Heroku, the Material Table component (./components/TaskTable.js) loses its components width settings.
+*/
+#root
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > div
+  > table
+  > thead
+  > tr
+  > th:nth-child(2) {
+  width: 2200px !important;
+}
+
+/*
+-------------
+OTHER CLASSES:
+-------------
+*/
+
+.accordion-task-title {
+  width: 100%;
+}
+
+.add-task-button-container {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  margin-bottom: 10px;
+}
+
+.archive-warning {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+}
+
+.button-group {
+  display: flex;
+  flex-flow: wrap;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  width: 170px;
+}
+
+.checkmark {
+  font-size: 2.5em;
+  padding: 5px;
+}
+
+.confirm-saves {
+  padding-left: 1em;
+  padding-top: 2em;
+}
+
+.confirm-saves-text {
+  color: red;
+  font-size: 0.8em;
+  padding-right: 10px;
+}
+
+.create-subtask {
+  margin: 0px;
+}
+
+.create-task-wrapper {
+  width: auto;
+  background-color: antiquewhite;
+}
+
+.create-wrapper {
+  background-color: transparent;
+  margin: 10px;
+}
+
+.done-container {
+  position: relative;
+  background-color: transparent;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 7px;
+}
+
+.percentage {
+  font-size: 1.4em;
+  padding: 5px;
+  color: rgba(104, 104, 128, 0.664);
+}
+
+.title-percentage-inside-wrapper {
+  float: right;
+}
+
+.title-row {
+  background-color: rgb(243, 243, 243);
+  border-radius: 20px;
+}
+
+.title-row-accordion {
+  background-color: brown;
+}
+
+.title-row-container {
+  position: relative;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 0 7px 7px 0;
+}
+
+.title-row-percents {
+  background-color: violet;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  float: left;
+  z-index: 0;
+  border-radius: 0px 7px 7px 0px;
+}
+
+.title-row-percents-done {
+  background-color: lightgreen;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  float: left;
+  z-index: 0;
+  border-radius: 0px 7px 7px 0px;
+}
+
+.title-row-textcontainer {
+  margin: 1em;
+  background-color: transparent;
+  z-index: 1;
+  width: 100%;
+}
+
+.title-row-time-after-title {
+  margin: 0.8em;
+  font-size: 1.2em;
+  text-shadow: 2px 2px 4px seashell;
+  font-weight: lighter;
+}
+
+.title-wrapper {
+  width: 100%;
+}
+
+.slider-width {
+  width: 100%;
+}
+
+.subtask-container {
+  position: relative;
+  top: -10px;
+}
+
+.subtask-minutes {
+  background-color: lightgrey;
+  margin-left: 5px;
+  padding: 0px 5px 0px 5px;
+}
+
+.subtask-wrapper {
+  font-weight: normal;
+  font-size: 0.9em;
+  margin-top: 0em;
+}
+
+@media only screen and (max-width: 600px) {
+  .confirm-saves {
+    padding-left: 1em;
+    display: inline-block;
+    padding-top: 1em;
+  }
+  .confirm-saves-text {
+    color: red;
+    font-size: 0.8em;
+    padding-right: 10px;
+  }
+  .subtask-minutes {
+    background-color: lightgrey;
+    margin-left: 5px;
+    display: none;
+    padding: 0px 5px 0px 5px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .add-task-button-container {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    height: 75px;
+    margin-top: 26px;
+    margin-bottom: 10px;
+  }
+  .task-counter-container {
+    position: relative;
+    text-align: center;
+    margin-left: 1em;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For large desktops: */
+}
+
+@media only screen and (min-width: 900px) {
+  /* For extra large desktops: */
+}
