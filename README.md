@@ -8,7 +8,7 @@ Easiest way to demo this project is to test it out in
 https://tamk-4a00ez62-3001-group02.herokuapp.com/
 
 If you want to install it locally instead, you need to clone both this
-todo-frontend and another repo todo-backend,
+todo-frontend and another repo todo-backend https://github.com/lpaajarvi/todo-backend ,
 sql database needed as well, check creation scripts in todo-backend).
 
 It's also possible to install this all as a full-stack app if you make a build
